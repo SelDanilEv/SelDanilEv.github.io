@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random</title>
+</head>
+<body>
+	<script>
+const randAmount = 15;
+
+
+const group = [
+			{},{name:"Белевич"},{name:"Болвако"}, {name:"Борисов"}, {name:"Гендель"}, {name:"Гинько"}, {name:"Городилов"}, {name:"?Зайцев?"}, {name:"Казакевич"}, {name:"Карпушевич"}, {name:"Керезь"}, {name:"Кожемякин"}, {name:"Конопацкий"}, {name:"Костюкова"}, {name:"Кравцова"}, {name:"Кремень"}, {name:"?Леончик?"}, {name:"Лой"}, {name:"Маркевич"}, {name:"Невар"}, {name:"Нестерович"}, {name:"Примаков"}, {name:"Рогалевич"}, {name:"Селицкий"}, {name:"Смелова"}, {name:"Столяров"}, {name:"Титовец"}, {name:"Трифонов"}, {name:"Фёдоров"}, {name:"Яковлев"}
+			];
+			const groupLength = Object.keys(group).length;
+// let group = new Array("Белевич","Болвако", "Борисов", "Гендель", "Гинько");
+// 	console.log();
+		function rand() {
+			
+			const randArr = [];
+			while(randArr.length != randAmount) {
+				flagDouble = false;
+				let randIndex = (Math.floor(Math.random() * (groupLength - 1)) + 1);
+				
+				for (let j = 0; j < randArr.length; j++)
+					if (randIndex == randArr[j]){
+						flagDouble = true;
+						break;
+					}
+				if (!flagDouble) {
+						randArr.push(randIndex);
+					}
+					
+			}
+			randArr.sort((a,b) => a - b);
+			for (let i = 0; i < randAmount; i++)
+					document.write(`${randArr[i]} ${group[randArr[i]].name}<br>`);
+		}
+	</script>
+<div id="out"></div>
+<button onclick="rand()">Random</button>
+</body>
+</html>
