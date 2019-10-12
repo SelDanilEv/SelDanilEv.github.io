@@ -20,6 +20,7 @@
         const randAmount = 15;
 
         fetch("https://www.random.org/", {
+            "mode": "cors",
             "jsonrpc": "2.0",
             "method": "generateIntegerSequences",
             "params": {
