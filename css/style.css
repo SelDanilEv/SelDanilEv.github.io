@@ -50,6 +50,7 @@ br {
 .header-text {
     padding-top: 45px;
     padding-bottom: 45px;
+    text-align: center;
 }
 
 .centered {
@@ -113,6 +114,7 @@ br {
 .timeline-item-inner {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .float-right {
@@ -188,3 +190,16 @@ p {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+.avatar_for_mobile{
+    display: none;
+}
+
+.last-connector{
+    margin-left: 49%;
+}
+
+/*.timeline-container{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/

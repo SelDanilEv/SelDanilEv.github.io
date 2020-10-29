@@ -1,0 +1,27 @@
+@media (max-width: 550px) {
+    .rounded-circle, .timeline-connector {
+        display: none;
+    }
+
+    .avatar_for_mobile {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 10px;
+    }
+
+    .mobile-avatar {
+        display: block;
+    }
+
+    .timeline-connector-vertical {
+        margin-left: 200px;
+    }
+
+    .timeline-item:nth-child(2n) {
+        margin-left: 0px;
+    }
+
+    .timeline-description {
+        padding: 15px 20px;
+    }
+}
