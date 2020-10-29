@@ -6,7 +6,13 @@
     .avatar_for_mobile {
         display: block;
         width: fit-content;
-        margin: 0 auto 10px;
+        margin: 0 auto 30px;
+    }
+
+    .header-text {
+        padding-top: 35px;
+        padding-bottom: 25px;
+        text-align: center;
     }
 
     .mobile-avatar {
